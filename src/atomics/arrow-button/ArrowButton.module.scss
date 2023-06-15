@@ -1,0 +1,19 @@
+@import "styles/scss/colors.scss";
+
+.container {
+ display: flex;
+ gap: 12px;
+ .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #e2e6ec;
+  box-shadow: 0 3px 10px rgba(27, 27, 27, 0.08);
+  &:hover {
+   border-color: $primary_400 !important;
+  }
+ }
+}

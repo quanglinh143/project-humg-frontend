@@ -1,0 +1,99 @@
+@import "styles/scss/colors.scss";
+
+.container {
+ min-height: 40vh;
+ background-color: $primary_500;
+ padding: 42px 100px;
+ color: $white;
+
+ .headFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+
+  &_company {
+   flex: 2;
+
+   .logo {
+    width: auto;
+    height: 80px;
+    .logoHeader {
+     width: 100px;
+     height: 100%;
+     margin-left: 60px;
+     scale: 1.5;
+     cursor: pointer;
+    }
+   }
+
+   &_name,
+   &_address {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+   }
+  }
+  &_introduce {
+   flex: 3;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   &_title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 16px;
+   }
+   ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li {
+     font-size: 14px;
+     font-weight: 500;
+     margin-bottom: 8px;
+     &:hover {
+      text-decoration: underline;
+     }
+    }
+   }
+  }
+  &_contact {
+   flex: 1;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 20px;
+  }
+ }
+
+ .policy {
+  border-top: 1px solid $white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+
+  &_icons {
+   display: flex;
+   gap: 8px;
+   cursor: pointer;
+  }
+ }
+}
+
+@media screen and (max-width: 1024px) {
+ .container {
+  padding: 36px 48px;
+  .headFooter {
+   flex-direction: column;
+   &_company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+   }
+
+   &_introduce {
+    margin-bottom: 36px;
+   }
+  }
+ }
+}

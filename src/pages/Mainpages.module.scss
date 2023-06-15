@@ -1,0 +1,19 @@
+@import "styles/scss/colors.scss";
+
+.scrollToTop {
+ position: fixed;
+ bottom: 90px;
+ right: 25px;
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ background-color: $success_400;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+
+ &_icon {
+  stroke: $white;
+ }
+}

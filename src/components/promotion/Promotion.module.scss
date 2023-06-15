@@ -1,0 +1,62 @@
+@import "styles/scss/colors.scss";
+
+.container {
+ border: 1px solid $danger_400;
+
+ .title {
+  padding: 6px 8px 7px 0;
+  border-bottom: 1px dashed #e1e1e1;
+
+  &_promotion {
+   width: 170px;
+   height: 30px;
+   background-color: $danger_400;
+   height: 36px;
+   padding: 3px 12px;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   position: relative;
+
+   &::after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: $white;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+    position: absolute;
+    right: -21px;
+   }
+
+   &_text {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+   }
+  }
+ }
+
+ .content {
+  padding: 4px 12px 18px 12px;
+
+  &_title {
+   padding: 5px 0;
+  }
+
+  &_list {
+   font-weight: 400;
+   padding: 0 8px;
+   span {
+    color: $danger_400;
+    font-size: 14px;
+    font-weight: 500;
+   }
+
+   &_item {
+    padding-bottom: 3px;
+   }
+  }
+ }
+}

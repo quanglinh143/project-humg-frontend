@@ -1,0 +1,30 @@
+@import "styles/scss/colors.scss";
+
+.container {
+ display: flex;
+ min-height: 60vh;
+ overflow-x: hidden;
+ box-sizing: border-box;
+ .sideMenu {
+  width: 280px;
+ }
+
+ .content {
+  width: calc(100vw - 280px - 20px);
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .container {
+  flex-direction: column;
+
+  .sideMenu {
+   width: 100%;
+  }
+
+  .content {
+   width: 100%;
+   padding: 0 20px;
+  }
+ }
+}

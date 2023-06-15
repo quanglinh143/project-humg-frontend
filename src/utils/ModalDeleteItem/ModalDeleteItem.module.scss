@@ -1,0 +1,36 @@
+.modalUpdate {
+  :global {
+    .ant-modal-body {
+      display: flex;
+    }
+    .ant-modal-footer {
+      gap: 10px;
+    }
+  }
+  &_title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &_confirm {
+    background-color: #175e4c;
+    border: unset !important;
+    height: 36px;
+    padding: 4px 20px;
+    span {
+      color: #fff;
+    }
+    &:hover {
+      background-color: #114739;
+      border-color: #114739;
+    }
+  }
+  &_cancel {
+    height: 36px;
+    padding: 4px 20px;
+    &:hover {
+      color: #175e4c !important;
+      border-color: #175e4c !important;
+    }
+  }
+}

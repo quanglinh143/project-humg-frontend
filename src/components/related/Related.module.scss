@@ -1,0 +1,30 @@
+@import "styles/scss/colors.scss";
+
+.related {
+ background-color: #fff;
+ margin-top: 72px;
+ margin-bottom: 120px;
+
+ &_headContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 0 18px;
+ }
+ &_title {
+  color: $warning_400;
+ }
+
+ &_slider {
+  :global {
+   .slick-list {
+    .slick-track {
+     .slick-slide {
+      max-width: 330px;
+      padding: 12px;
+     }
+    }
+   }
+  }
+ }
+}

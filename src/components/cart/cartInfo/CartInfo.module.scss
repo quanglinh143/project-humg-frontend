@@ -1,0 +1,60 @@
+@import "styles/scss/colors.scss";
+.boxItem {
+ width: 100%;
+ margin-bottom: 12px;
+
+ &_title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &_text {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 22px;
+   color: $ink_600;
+   margin-bottom: 4px;
+  }
+  &_edit {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 22px;
+   color: $primary_400;
+   cursor: pointer;
+  }
+ }
+
+ &_value {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $ink_300;
+ }
+}
+
+.btn {
+ display: flex;
+ justify-content: end;
+ margin: 12px 0;
+
+ .cancelBtn {
+  width: 164px;
+  height: 42px;
+  color: $black_500;
+  border-radius: 4px;
+  border: 1px solid $ink_100;
+  margin-left: 8px;
+ }
+
+ .updateBtn {
+  width: 164px;
+  height: 42px;
+  background-color: $primary_400;
+  color: $white;
+  border-radius: 4px;
+  margin-left: 8px;
+
+  &:hover {
+   color: $white !important;
+  }
+ }
+}

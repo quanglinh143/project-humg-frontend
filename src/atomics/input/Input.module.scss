@@ -1,0 +1,12 @@
+@import "styles/scss/colors.scss";
+
+.custom {
+ width: 100%;
+ border-radius: 4px;
+ border: 1px solid $black_200;
+ padding: 8px;
+
+ &:hover {
+  border: 1px solid $primary_400 !important;
+ }
+}

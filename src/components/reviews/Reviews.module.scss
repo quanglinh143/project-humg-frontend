@@ -1,0 +1,55 @@
+@import "styles/scss/colors.scss";
+
+.container {
+ .title {
+  color: $warning_400;
+  margin-top: 36px;
+  padding: 0 18px;
+ }
+
+ .review {
+  display: flex;
+  border-bottom: 1px solid $border_input_100;
+  padding: 24px 30px 48px 30px;
+ }
+
+ .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &_name {
+   color: $black_500;
+   font-weight: 500;
+  }
+  &_createdAt {
+   color: $black_300;
+   font-weight: 400;
+  }
+ }
+
+ .rating {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+ }
+
+ .content {
+  flex: 2;
+  &_title {
+   color: $black_500;
+   font-weight: 500;
+  }
+
+  &_description {
+   color: $black_400;
+   font-weight: 400;
+  }
+ }
+}
+
+.paginate {
+ width: 100%;
+ display: flex;
+ justify-content: end;
+ margin-top: 16px;
+}

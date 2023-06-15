@@ -1,0 +1,49 @@
+@import "styles/scss/colors.scss";
+
+.container {
+ border-right: 1px solid $black_50;
+ padding: 20px;
+ .refinements {
+  margin-bottom: 24px;
+
+  &_title {
+   font-size: 15px;
+   font-weight: 600;
+   margin-bottom: 6px;
+  }
+  &_list {
+   padding-left: 12px;
+   &_item {
+    display: flex;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+
+    &_name {
+     display: inline-block;
+     width: 100%;
+     cursor: pointer;
+    }
+
+    &:hover {
+     color: $warning_400;
+    }
+   }
+  }
+ }
+
+ .priceRange {
+  font-size: 15px;
+  font-weight: 600;
+  :global {
+   .ant-slider-track {
+    background-color: $warning_400 !important;
+   }
+
+   .ant-slider-handle::after {
+    box-shadow: 0 0 0 2px $warning_500;
+   }
+  }
+ }
+}

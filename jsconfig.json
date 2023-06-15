@@ -1,0 +1,18 @@
+{
+ "compilerOptions": {
+  "baseUrl": "src",
+  "paths": {
+   "@api/*": ["src/api/"],
+   "@atomics/*": ["src/atomics/"],
+   "@components/*": ["src/components/"],
+   "@constants/*": ["src/constants/"],
+   "@icons/*": ["src/icons/"],
+   "@hooks/*": ["src/hooks/"],
+   "@pages/*": ["src/pages/"],
+   "@services/*": ["src/services/"],
+   "@styles/*": ["src/styles/"],
+   "@utils/*": ["src/utils/"],
+   "@GlobalState/*": ["src/GlobalState/"]
+  }
+ }
+}
